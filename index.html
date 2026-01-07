@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- Chatroom styles via jsDelivr -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weberi/chatroom@master/dist/Chatroom.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weberi/chatroom@master/index.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weberi/chatroom@master/themes/theme2.css" />
+<head>
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/weberi/chatroom/master/dist/Chatroom.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.statically.io/gh/weberi/chatroom/master/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.statically.io/gh/weberi/chatroom/master/themes/theme2.css" />
 </head>
 <body>
-  <div class="chat-container"></div>
-
-  <!-- Chatroom script via jsDelivr -->
-  <script src="https://cdn.jsdelivr.net/gh/weberi/chatroom@master/dist/Chatroom.js"></script>
-
-  <script>
-    // Fail-fast hint if the script didn't load
-    if (!window.Chatroom) {
-      document.body.insertAdjacentHTML('beforeend',
-        '<div style="padding:12px;color:#fff;background:#c00">Could not load Chatroom.js</div>');
-    }
-
+    <div class="chat-container"></div>
+    <script src="https://cdn.statically.io/gh/weberi/chatroom/master/dist/Chatroom.js"></script>
+    <script type="text/javascript">
     var chatroom = new window.Chatroom({
-      host: "https://silver-adventure-5pv7pqj6q67276w4-5005.app.github.dev/",
-      title: "Chat with a bot",
-      container: document.querySelector(".chat-container"),
-      welcomeMessage: "Welcome.",
-      speechRecognition: "en-US",
-      voiceLang: "en-US"
+        host: "https://your-codespace-url-5005.preview.app.github.dev",   
+        title: "Chat with a bot",
+        container: document.querySelector(".chat-container"),
+        welcomeMessage: "Nice to meet you.",
+        speechRecognition: "en-US",
+        voiceLang: "en-US"
     });
     chatroom.openChat();
-  </script>
+    </script>
 </body>
 </html>
